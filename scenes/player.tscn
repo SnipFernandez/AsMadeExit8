@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://degw3vw5hafl0"]
+
+[ext_resource type="Script" path="res://Scenes/player.gd" id="1_psftj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_thekn"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_eyb75"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x78wv"]
+albedo_color = Color(0, 0.360784, 0.607843, 1)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0051, 2.04051, 12.9675)
+script = ExtResource("1_psftj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_thekn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+visible = false
+mesh = SubResource("CapsuleMesh_eyb75")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_x78wv")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.455119, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+transform = Transform3D(0.991748, 0.001493, 0.128192, 0, 0.999932, -0.0116458, -0.128201, 0.0115497, 0.991681, 0, 0, 0)
