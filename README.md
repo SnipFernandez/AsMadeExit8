@@ -1,3 +1,10 @@
+<div align="center">
+    <span>&nbsp;❖&nbsp;</span>
+    <a href="https://www.youtube.com/@GordyoStudios">
+        YouTube
+    </a>
+</div>
+
 ![GitHub stars](https://img.shields.io/github/stars/SnipFernandez/AsMadeExit8)
 ![GitHub issues](https://img.shields.io/github/issues/SnipFernandez/AsMadeExit8)
 ![GitHub forks](https://img.shields.io/github/forks/SnipFernandez/AsMadeExit8)
